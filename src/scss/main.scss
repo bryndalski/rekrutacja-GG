@@ -56,19 +56,75 @@ main {
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
+  main {
+    width: 1440px;
+  }
+
   .container {
+    position: absolute;
+    top: 90px;
+    margin: 0 auto;
     width: 1440px;
     height: 960px;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    justify-content: space-around;
   }
   img {
-    content: url("/images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3,c_fill,g_auto__c_scale,w_538.jpg");
+    width: 505px;
+    height: 330px;
   }
   .content {
     width: 380px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 1439px) and (min-width: 960px) {
+  main {
+    width: 100vw;
+  }
+
+  .container {
+    position: absolute;
+    top: 90px;
+    margin: 0 auto;
+    width: 100vw;
+    height: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  img {
+    max-width: 505px;
+    height: 330px;
+  }
+  .content {
+    width: 380px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  main {
+    width: 100vw;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  img {
+    width: 100vw;
+    height: 330px;
+  }
+  .content {
+    margin: 1rem;
+    width: calc(100vw-2rem);
     height: 250px;
   }
 }
