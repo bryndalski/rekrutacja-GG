@@ -1,0 +1,53 @@
+//font
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+//colors
+//main
+main {
+  width: 1440px;
+}
+
+//content
+.content {
+  $main_text_color: #121212;
+  $button_background_color: #e4c1ae;
+  $button_text_color: #ffffff;
+  //text
+  &-text {
+    font-family: "Roboto";
+    font-style: normal;
+    //title section styles
+    &-title {
+      color: $main_text_color;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 120%;
+    }
+    //description styles
+    &-desc {
+      color: $main_text_color;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 150%;
+    }
+    &-button {
+      color: $button_text_color;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 100%;
+    }
+  }
+  //button
+  &-button {
+    width: 128px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 40px;
+    gap: 10px;
+    border-radius: 32px;
+    background: $button_background_color;
+    border: none;
+    cursor: pointer;
+  }
+}
